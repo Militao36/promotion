@@ -1,0 +1,16 @@
+.legends-charts>span {
+  display: block;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .legends-charts > span {
+    display: inline;
+    width: auto;
+    margin-top: 0px;
+  }
+
+  .legends-charts {
+    margin-top: 10px;
+  }
+}
