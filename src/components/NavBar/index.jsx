@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
@@ -9,21 +11,21 @@ export function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/home">Inicio</a>
+              <Link className="nav-link active" aria-current="page" to="/home">Inicio</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Cadastros
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="/product">Produto</a></li>
+                <li><Link className="dropdown-item" to="/product">Produto</Link></li>
                 <li><a className="dropdown-item" href="#">Another action</a></li>
                 <li><hr className="dropdown-divider" /></li>
                 <li><a className="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li className="nav-item">
-              <a className="nav-link">Promoção</a>
+            <li className="nav-item" role="button">
+              <Link className="nav-link" to="/promotion">Promoção</Link>
             </li>
           </ul>
           <div className="d-flex" role="search">
