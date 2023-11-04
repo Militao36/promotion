@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { PageProduct } from "./pages/Product"
+import { PagePromotion } from "./pages/Promotion";
 
 import './global.css'
 import { PageLogin } from "./pages/Login";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/sign" element={<PageSignIn />} exact />
           <Route path="/home" element={<PageHome />} exact />
           <Route path="/product" element={<PageProduct />} exact />
+          <Route path="/promotion" element={<PagePromotion />} exact />
         </Routes>
       </BrowserRouter>
     </>
