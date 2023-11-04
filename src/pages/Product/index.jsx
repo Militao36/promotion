@@ -1,14 +1,15 @@
+import { ModalProduct } from '../../components/Modals/Product'
 import { NavBar } from '../../components/NavBar'
 
 export function PageProduct() {
   return (
     <>
       <NavBar />
-
+      <ModalProduct />
       <div className="container mt-4">
         <div className='bg-dark text-white p-2 rounded d-flex justify-content-between align-items-center'>
           <h4>Produtos</h4>
-          <button className='btn btn-success btn-sm'>+</button>
+          <button className='btn btn-success btn-sm' data-bs-toggle="modal" data-bs-target="#modalProduct">+</button>
         </div>
         <div className='row mt-3'>
           <div className='col-sm-10'>

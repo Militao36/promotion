@@ -14,6 +14,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import './styles.css'
+import { ModalProduct } from '../../components/Modals/Product';
 
 ChartJS.register(
   CategoryScale,
@@ -58,9 +59,10 @@ export function PageHome() {
   return (
     <div>
       <NavBar />
+      <ModalProduct />
       <div className="container">
         <div className="mt-2 alert alert-primary d-flex justify-content-between align-items-center" role="alert">
-          <span>Cadastrar novo produto?</span> <button className='btn btn-sm btn-success'>+</button>
+          <span>Cadastrar novo produto?</span> <button className='btn btn-sm btn-success' data-bs-toggle="modal" data-bs-target="#modalProduct">+</button>
         </div>
 
         <div className="row">
